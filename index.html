@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Tiêu chuẩn và Open Graph -->
+  <title>Du lịch Thanh Hóa - Nơi Biển Xanh Gặp Núi Rừng</title>
+  <meta name="description" content="Cổng thông tin và cẩm nang quảng bá du lịch tỉnh Thanh Hóa: khám phá Pù Luông, Sầm Sơn, Di sản Thành Nhà Hồ, Bến En, Lam Kinh, ẩm thực và văn hóa xứ Thanh." />
+  <meta name="keywords" content="du lịch Thanh Hóa, Pù Luông, biển Sầm Sơn, Thành Nhà Hồ, Bến En, Lam Kinh, đặc sản Thanh Hóa, nem chua" />
+  <meta name="author" content="Cổng Thông Tin Du Lịch Xứ Thanh" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Du lịch Thanh Hóa - Nơi Biển Xanh Gặp Núi Rừng" />
+  <meta property="og:description" content="Khám phá vẻ đẹp kỳ vĩ của thiên nhiên xứ Thanh: từ biển xanh Sầm Sơn, ruộng bậc thang Pù Luông đến Di sản Văn hóa Thế giới Thành Nhà Hồ." />
+  <meta property="og:image" content="https://minhduc280903.github.io/du-l-ch-36/assets/images/pu-luong.jpg" />
+  <meta property="og:url" content="https://dulichthanhhoa.vn" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Du lịch Thanh Hóa - Nơi Biển Xanh Gặp Núi Rừng" />
+  <meta name="twitter:description" content="Cổng thông tin và cẩm nang quảng bá du lịch tỉnh Thanh Hóa đầy đủ chi tiết." />
+  <meta name="twitter:image" content="https://minhduc280903.github.io/du-l-ch-36/assets/images/sam-son.jpg" />
+
+  <!-- Google Fonts: Playfair Display & Be Vietnam Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tệp CSS giao diện thuần -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- 0. THANH TIẾN TRÌNH ĐỌC & CON TRỎ CHUỘT DESKTOP                           -->
+  <!-- ========================================================================= -->
+  <div id="reading-progress-bar"></div>
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HIỆU ỨNG MỞ TRANG (INTRO MÁY BAY CHUYỂN ĐỘNG)                          -->
+  <!-- ========================================================================= -->
+  <aside id="intro-screen" aria-label="Màn hình giới thiệu chào mừng">
+    <!-- Mây trời SVG lơ lửng -->
+    <div class="intro-clouds">
+      <svg class="cloud cloud-1" viewBox="0 0 100 40">
+        <path d="M10 30 Q15 15 30 18 Q40 5 60 12 Q75 2 85 18 Q95 22 90 32 Z" />
+      </svg>
+      <svg class="cloud cloud-2" viewBox="0 0 100 40">
+        <path d="M15 32 Q25 12 45 16 Q60 4 78 14 Q90 18 85 32 Z" />
+      </svg>
+      <svg class="cloud cloud-3" viewBox="0 0 100 40">
+        <path d="M10 28 Q20 16 35 18 Q50 8 70 15 Q88 20 82 30 Z" />
+      </svg>
+    </div>
+
+    <!-- Máy bay SVG mũi hướng sang trái có vệt khói -->
+    <div class="airplane-wrapper">
+      <div class="airplane-contrail"></div>
+      <svg class="airplane-svg" width="160" height="70" viewBox="0 0 200 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Thân máy bay hướng mũi sang trái -->
+        <path d="M10 45 C25 36 60 30 140 30 C165 30 185 34 195 45 C185 56 165 60 140 60 C60 60 25 54 10 45 Z" fill="#FFFFFF" stroke="#0E7C66" stroke-width="2.5" />
+        <!-- Đuôi máy bay -->
+        <path d="M170 30 L195 8 L180 8 L150 30 Z" fill="#0E7C66" />
+        <path d="M170 60 L195 82 L180 82 L150 60 Z" fill="#0E7C66" />
+        <!-- Cánh máy bay -->
+        <path d="M105 45 L135 5 L115 5 L75 45 Z" fill="#1E88C8" />
+        <path d="M105 45 L135 85 L115 85 L75 45 Z" fill="#126597" />
+        <!-- Cửa sổ máy bay -->
+        <circle cx="35" cy="45" r="3.5" fill="#12263A" />
+        <circle cx="50" cy="45" r="3" fill="#1E88C8" />
+        <circle cx="65" cy="45" r="3" fill="#1E88C8" />
+        <circle cx="80" cy="45" r="3" fill="#1E88C8" />
+        <circle cx="95" cy="45" r="3" fill="#1E88C8" />
+        <circle cx="110" cy="45" r="3" fill="#1E88C8" />
+        <circle cx="125" cy="45" r="3" fill="#1E88C8" />
+        <!-- Động cơ phản lực -->
+        <rect x="90" y="24" width="28" height="8" rx="4" fill="#F4A825" />
+      </svg>
+    </div>
+
+    <!-- Thông điệp chào mừng giữa màn hình -->
+    <div class="intro-content">
+      <span class="intro-badge">Khám phá dải đất địa linh nhân kiệt</span>
+      <h1 class="intro-headline">Chào mừng đến với Xứ Thanh</h1>
+      <p class="intro-subtext">Hành trình trải nghiệm nơi biển xanh rì rào hội ngộ đại ngàn hùng vĩ</p>
+    </div>
+
+    <!-- Nút bỏ qua intro góc phải dưới -->
+    <button id="btn-skip-intro" class="btn-skip-intro" aria-label="Bỏ qua phần giới thiệu chuyển động">
+      Bỏ qua intro <i class="fa-solid fa-forward-step" style="margin-left: 6px;"></i>
+    </button>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HEADER CỐ ĐỊNH (STICKY NAV TOP BAR CONTRACT)                           -->
+  <!-- ========================================================================= -->
+  <header id="main-header">
+    <div class="container header-container">
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="#hero" class="brand-link" aria-label="Trang chủ Du lịch Thanh Hóa">
+        <div class="brand-icon">
+          <i class="fa-solid fa-mountain-sun"></i>
+        </div>
+        <span class="brand-wordmark">Du lịch Thanh Hóa</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="main-nav" aria-label="Menu điều hướng chính">
+        <a href="#hero" class="nav-link active">Trang chủ</a>
+        <a href="#about" class="nav-link">Giới thiệu</a>
+        <a href="#destinations" class="nav-link">Điểm đến</a>
+        <a href="#cuisine" class="nav-link">Ẩm thực</a>
+        <a href="#festivals" class="nav-link">Lễ hội</a>
+        <a href="#itineraries" class="nav-link">Lịch trình</a>
+        <a href="#guide" class="nav-link">Cẩm nang</a>
+        <a href="#gallery" class="nav-link">Thư viện</a>
+      </nav>
+
+      <!-- Zone 3: Actions & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="#destinations" class="btn btn-accent header-cta-btn">
+          Khám phá ngay <i class="fa-solid fa-compass"></i>
+        </a>
+        <button id="btn-hamburger" class="btn-hamburger" aria-label="Mở menu điện thoại" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div id="mobile-backdrop" class="mobile-nav-backdrop"></div>
+  <aside id="mobile-drawer" class="mobile-nav-drawer" aria-label="Menu di động">
+    <div class="drawer-header">
+      <div class="brand-link">
+        <div class="brand-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+        <span class="drawer-title">Xứ Thanh Kỳ Thú</span>
+      </div>
+      <button id="btn-close-drawer" class="drawer-close-btn" aria-label="Đóng menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Trang chủ</a>
+      <a href="#about" class="mobile-nav-link">Giới thiệu tổng quan</a>
+      <a href="#destinations" class="mobile-nav-link">Điểm đến nổi bật</a>
+      <a href="#cuisine" class="mobile-nav-link">Ẩm thực đặc sản</a>
+      <a href="#festivals" class="mobile-nav-link">Lễ hội truyền thống</a>
+      <a href="#itineraries" class="mobile-nav-link">Lịch trình gợi ý</a>
+      <a href="#guide" class="mobile-nav-link">Cẩm nang du lịch</a>
+      <a href="#gallery" class="mobile-nav-link">Thư viện ảnh</a>
+      <a href="#newsletter" class="mobile-nav-link">Liên hệ & Đăng ký</a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 3. HERO SECTION TOÀN MÀN HÌNH & KEN BURNS SLIDER                          -->
+  <!-- ========================================================================= -->
+  <section id="hero" aria-label="Biểu ngữ chính">
+    <!-- Slider hình nền với Ken Burns Zoom -->
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image: url('assets/images/sam-son.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/pu-luong.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/thanh-nha-ho.jpg');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <span class="hero-kicker">
+        <i class="fa-solid fa-location-dot"></i> Bắc Trung Bộ · Việt Nam
+      </span>
+      <h1 class="hero-title">Thanh Hóa - Nơi biển xanh gặp núi rừng</h1>
+      <p class="hero-subtext">
+        Hòa mình vào khúc ca sóng biển nhiệt đới Sầm Sơn, dạo bước qua những dải lúa chín dát vàng Pù Luông và chiêm ngưỡng kiệt tác thành đá cổ Thành Nhà Hồ nghìn năm rạng rỡ.
+      </p>
+
+      <!-- Ô tìm kiếm điểm đến thông minh -->
+      <div class="hero-search-wrapper">
+        <div class="hero-search-box">
+          <i class="fa-solid fa-magnifying-glass hero-search-icon"></i>
+          <input 
+            type="text" 
+            id="hero-search-input" 
+            class="hero-search-input" 
+            placeholder="Tìm kiếm bãi biển, di sản, Pù Luông, ẩm thực..." 
+            aria-label="Tìm kiếm điểm đến du lịch"
+            autocomplete="off"
+          />
+          <button class="hero-search-btn" id="hero-search-btn">Tìm kiếm</button>
+        </div>
+        <!-- Dropdown danh sách gợi ý -->
+        <div id="search-dropdown" class="search-results-dropdown"></div>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="#destinations" class="btn btn-accent">
+          Xem 10 điểm đến nổi bật <i class="fa-solid fa-arrow-down"></i>
+        </a>
+        <a href="#guide" class="btn btn-outline-white">
+          Cẩm nang du lịch <i class="fa-solid fa-book-open"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Chỉ báo chuyển slide -->
+    <div class="hero-indicator-bar">
+      <span class="slider-dot active" data-index="0" aria-label="Slide Sầm Sơn"></span>
+      <span class="slider-dot" data-index="1" aria-label="Slide Pù Luông"></span>
+      <span class="slider-dot" data-index="2" aria-label="Slide Thành Nhà Hồ"></span>
+    </div>
+  </section>
+
+  <!-- SVG Sóng biển chuyển tiếp mượt mà -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg class="wave-svg" viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+      <path d="M0,32L60,42.7C120,53,240,75,360,80C480,85,600,75,720,58.7C840,43,960,21,1080,21.3C1200,21,1320,43,1380,53.3L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z" fill="#FFFFFF"></path>
+    </svg>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 4. GIỚI THIỆU TỔNG QUAN & BỘ ĐẾM CON SỐ NỔI BẬT                            -->
+  <!-- ========================================================================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-narrative reveal-on-scroll">
+          <span class="section-kicker">Vùng đất địa linh nhân kiệt</span>
+          <h2 class="section-title" style="text-align: left;">Bản giao hưởng kỳ vĩ của thiên nhiên và bề dày lịch sử</h2>
+          <p>
+            Tọa lạc ở vị trí chiến lược kết nối Bắc Bộ với Bắc Trung Bộ, <strong>Thanh Hóa</strong> như một “Việt Nam thu nhỏ” khi hội tụ đầy đủ các dạng địa hình: từ vùng đồng bằng màu mỡ phì nhiêu, dải bờ biển cát vàng thoai thoải sóng biếc, cho đến miền non cao trùng điệp với hệ sinh thái nguyên sinh trù phú bậc nhất.
+          </p>
+          <p>
+            Không chỉ được thiên nhiên ban tặng những danh thắng say đắm lòng người, mảnh đất xứ Thanh còn là cái nôi sản sinh ra các triều đại huy hoàng của dân tộc Việt Nam, lưu giữ những di sản kiến trúc quân sự đá cổ độc nhất vô nhị và những phong tục tập quán đậm đà bản sắc của 7 dân tộc anh em.
+          </p>
+        </div>
+
+        <!-- Bộ đếm số nổi bật -->
+        <div class="stats-grid" id="stats-container">
+          <!-- Render tự động từ data.overviewStats -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. ĐIỂM ĐẾN NỔI BẬT (BENTO / MASONRY GRID & BỘ LỌC)                        -->
+  <!-- ========================================================================= -->
+  <section id="destinations" class="section">
+    <div class="container">
+      <header class="section-header reveal-on-scroll">
+        <span class="section-kicker">Hành trình khám phá</span>
+        <h2 class="section-title">Điểm đến không thể bỏ lỡ tại xứ Thanh</h2>
+        <p class="section-subtitle">
+          Nhấn vào bất kỳ địa điểm nào để mở bài viết quảng bá chi tiết, đầy đủ hướng dẫn di chuyển, giá vé, hình ảnh và kinh nghiệm du lịch thực tế.
+        </p>
+      </header>
+
+      <!-- Thanh bộ lọc danh mục -->
+      <div class="destinations-filter-bar reveal-on-scroll">
+        <button class="filter-btn active" data-filter="all">Tất cả điểm đến</button>
+        <button class="filter-btn" data-filter="bien-dao">Biển đảo</button>
+        <button class="filter-btn" data-filter="nui-rung">Núi rừng</button>
+        <button class="filter-btn" data-filter="di-san">Di sản - Lịch sử</button>
+        <button class="filter-btn" data-filter="tam-linh">Tâm linh</button>
+      </div>
+
+      <!-- Lưới thẻ điểm đến -->
+      <div class="destinations-grid" id="destinations-grid">
+        <!-- Render tự động 10 điểm đến từ data.destinations -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. ẨM THỰC ĐẶC SẢN (CUISINE CAROUSEL)                                      -->
+  <!-- ========================================================================= -->
+  <section id="cuisine" class="section">
+    <div class="container">
+      <header class="section-header reveal-on-scroll">
+        <span class="section-kicker">Mỹ vị dân gian</span>
+        <h2 class="section-title">Hương vị ẩm thực nồng nàn xứ Thanh</h2>
+        <p class="section-subtitle">
+          Thưởng thức tinh hoa ẩm thực truyền thống, từ phong vị nem chua giòn cay, gỏi cá nhệch đậm đà đến món chè lam ấm nồng thơm mật mía.
+        </p>
+      </header>
+
+      <!-- Carousel ẩm thực -->
+      <div class="carousel-container">
+        <div class="cuisine-track" id="cuisine-track">
+          <!-- Render tự động 8 món ăn từ data.foods -->
+        </div>
+
+        <!-- Nút điều hướng Carousel -->
+        <div class="carousel-controls">
+          <button id="btn-cuisine-prev" class="carousel-btn" aria-label="Món trước">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button id="btn-cuisine-next" class="carousel-btn" aria-label="Món tiếp theo">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. LỄ HỘI VÀ VĂN HÓA TRUYỀN THỐNG (TIMELINE THEO THÁNG)                  -->
+  <!-- ========================================================================= -->
+  <section id="festivals" class="section">
+    <div class="container">
+      <header class="section-header reveal-on-scroll">
+        <span class="section-kicker">Hồn thiêng sông núi</span>
+        <h2 class="section-title">Lễ hội & Di sản phi vật thể đặc sắc</h2>
+        <p class="section-subtitle">
+          Lịch trình các lễ hội truyền thống náo nhiệt diễn ra quanh năm tôn vinh tiền nhân và cầu mong mưa thuận gió hòa.
+        </p>
+      </header>
+
+      <div class="festivals-timeline" id="festivals-timeline">
+        <!-- Render tự động từ data.festivals -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. LỊCH TRÌNH DU LỊCH GỢI Ý (3 CARDS)                                     -->
+  <!-- ========================================================================= -->
+  <section id="itineraries" class="section">
+    <div class="container">
+      <header class="section-header reveal-on-scroll">
+        <span class="section-kicker">Kế hoạch trọn vẹn</span>
+        <h2 class="section-title">Lịch trình khám phá lý tưởng theo ngày</h2>
+        <p class="section-subtitle">
+          Những lộ trình được tối ưu hóa cung đường và thời gian, giúp bạn tận hưởng trọn vẹn vẻ đẹp từ biển khơi lên đại ngàn.
+        </p>
+      </header>
+
+      <div class="itineraries-grid" id="itineraries-grid">
+        <!-- Render tự động 3 thẻ lịch trình từ data.itineraries -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. CẨM NANG DU LỊCH THIẾT THỰC (BENTO GUIDE)                              -->
+  <!-- ========================================================================= -->
+  <section id="guide" class="section">
+    <div class="container">
+      <header class="section-header reveal-on-scroll">
+        <span class="section-kicker">Thông tin hữu ích</span>
+        <h2 class="section-title">Cẩm nang bỏ túi khi du lịch Thanh Hóa</h2>
+        <p class="section-subtitle">
+          Mọi điều bạn cần chuẩn bị cho chuyến đi: thời điểm đẹp nhất, cách di chuyển thuận tiện, địa chỉ lưu trú và lưu ý an toàn.
+        </p>
+      </header>
+
+      <div class="guide-bento-grid">
+        <!-- Box 1: Thời điểm lý tưởng -->
+        <div class="guide-box reveal-on-scroll">
+          <div class="guide-box-header">
+            <div class="guide-box-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+            <h3 class="guide-box-title">Thời điểm du lịch đẹp nhất</h3>
+          </div>
+          <div class="guide-list" id="guide-seasons"></div>
+        </div>
+
+        <!-- Box 2: Phương tiện di chuyển -->
+        <div class="guide-box reveal-on-scroll">
+          <div class="guide-box-header">
+            <div class="guide-box-icon"><i class="fa-solid fa-plane-departure"></i></div>
+            <h3 class="guide-box-title">Cách di chuyển đến Thanh Hóa</h3>
+          </div>
+          <div class="guide-list" id="guide-transport"></div>
+        </div>
+
+        <!-- Box 3: Địa điểm lưu trú -->
+        <div class="guide-box reveal-on-scroll">
+          <div class="guide-box-header">
+            <div class="guide-box-icon"><i class="fa-solid fa-hotel"></i></div>
+            <h3 class="guide-box-title">Lựa chọn chỗ ở & Lưu trú</h3>
+          </div>
+          <div class="guide-list" id="guide-stay"></div>
+        </div>
+
+        <!-- Box 4: Lời khuyên thiết thực -->
+        <div class="guide-box reveal-on-scroll">
+          <div class="guide-box-header">
+            <div class="guide-box-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3 class="guide-box-title">Lời khuyên & Lưu ý cần nhớ</h3>
+          </div>
+          <ul class="guide-list" id="guide-tips"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 10. THƯ VIỆN ẢNH NGHỆ THUẬT & LIGHTBOX                                    -->
+  <!-- ========================================================================= -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <header class="section-header reveal-on-scroll">
+        <span class="section-kicker">Góc nhìn nhiếp ảnh</span>
+        <h2 class="section-title">Thư viện khoảnh khắc đẹp xứ Thanh</h2>
+        <p class="section-subtitle">
+          Bộ sưu tập những khung hình nên thơ được ghi lại tại các thắng cảnh nổi tiếng của Thanh Hóa.
+        </p>
+      </header>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Render tự động 12 ảnh từ data.gallery -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 11. ĐĂNG KÝ NHẬN TIN & CẨM NANG MIỄN PHÍ                                  -->
+  <!-- ========================================================================= -->
+  <section id="newsletter" class="section">
+    <div class="container">
+      <div class="newsletter-box">
+        <h2 class="newsletter-title">Nhận cẩm nang du lịch mới nhất</h2>
+        <p class="newsletter-desc">
+          Đăng ký email để nhận ngay bản đồ du lịch số hóa, gợi ý quán ngon bản địa và các chương trình ưu đãi mùa hè hấp dẫn.
+        </p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input 
+            type="email" 
+            id="newsletter-email" 
+            class="newsletter-input" 
+            placeholder="Nhập địa chỉ email của bạn..." 
+            required 
+            aria-label="Địa chỉ email nhận tin"
+          />
+          <button type="submit" class="btn btn-accent">
+            Đăng ký nhận tin <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 12. CHÂN TRANG (FOOTER)                                                   -->
+  <!-- ========================================================================= -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Cột 1: Giới thiệu thương hiệu -->
+        <div class="footer-brand">
+          <div class="brand-link" style="margin-bottom: 16px;">
+            <div class="brand-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+            <span class="brand-wordmark" style="color: var(--white);">Du lịch Thanh Hóa</span>
+          </div>
+          <p>
+            Cổng thông tin xúc tiến và quảng bá du lịch tỉnh Thanh Hóa. Lan tỏa vẻ đẹp thiên nhiên kỳ thú, bề dày di sản văn hóa và lòng hiếu khách của người dân xứ Thanh đến bạn bè bốn phương.
+          </p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cột 2: Liên kết nhanh -->
+        <div class="footer-col">
+          <h4>Liên kết nhanh</h4>
+          <div class="footer-links">
+            <a href="#destinations">Điểm đến nổi bật</a>
+            <a href="#cuisine">Ẩm thực xứ Thanh</a>
+            <a href="#festivals">Lịch lễ hội trong năm</a>
+            <a href="#itineraries">Gợi ý lịch trình</a>
+            <a href="#guide">Cẩm nang di chuyển</a>
+          </div>
+        </div>
+
+        <!-- Cột 3: Hỗ trợ du khách -->
+        <div class="footer-col">
+          <h4>Thông tin liên hệ</h4>
+          <div class="footer-links">
+            <p><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> Đại lộ Lê Lợi, TP. Thanh Hóa</p>
+            <p><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> Đường dây nóng: 1900 6868</p>
+            <p><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> info@dulichthanhhoa.vn</p>
+            <p><i class="fa-solid fa-globe" style="margin-right: 8px;"></i> dulichthanhhoa.vn</p>
+          </div>
+        </div>
+
+        <!-- Cột 4: Bản đồ tỉnh Thanh Hóa -->
+        <div class="footer-col">
+          <h4>Bản đồ địa giới</h4>
+          <div class="footer-map-wrap">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476313.385750239!2d105.3582236!3d19.8078923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3136f45207c4ecb7%3A0xe54d6fa33c30f40d!2zVOG7iW5oIFRoYW5oIEjDs2E!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cổng Thông Tin Xúc Tiến Du Lịch Tỉnh Thanh Hóa. Bảo lưu mọi quyền.</p>
+        <p>Thiết kế theo chuẩn công nghệ Web hiện đại · Phong cách tạp chí du lịch</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nút bấm nổi Lên đầu trang -->
+  <button id="back-to-top" aria-label="Cuộn lên đầu trang">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ========================================================================= -->
+  <!-- 13. TRANG / MODAL BÀI VIẾT CHI TIẾT (FULL ARTICLE VIEW ROUTER)             -->
+  <!-- ========================================================================= -->
+  <div id="article-overlay" role="dialog" aria-modal="true" aria-label="Bài viết chi tiết điểm đến">
+    <!-- Thanh điều hướng cố định trên đầu bài viết -->
+    <div class="article-header-nav">
+      <button id="btn-back-home" class="btn-back-home" aria-label="Quay lại trang chủ">
+        <i class="fa-solid fa-arrow-left"></i> Quay lại trang chủ
+      </button>
+
+      <div class="article-nav-actions">
+        <span style="font-size: 0.85rem; color: var(--text-muted); margin-right: 8px;">Chia sẻ bài viết:</span>
+        <button id="btn-share-fb" class="btn-share-item" aria-label="Chia sẻ qua Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </button>
+        <button id="btn-share-zalo" class="btn-share-item" aria-label="Chia sẻ qua Zalo">
+          <span style="font-weight: 700; font-size: 0.75rem;">Z</span>
+        </button>
+        <button id="btn-share-copy" class="btn-share-item" aria-label="Sao chép liên kết">
+          <i class="fa-solid fa-link"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Ảnh bìa lớn có hiệu ứng Parallax & tiêu đề bài viết -->
+    <div class="article-hero-cover">
+      <img id="article-cover-img" class="article-cover-img" src="" alt="Ảnh bìa bài viết" />
+      <div class="article-hero-scrim"></div>
+      <div class="article-hero-content">
+        <div class="article-meta-row">
+          <span id="article-category-tag" class="article-category-tag">Danh mục</span>
+          <span>·</span>
+          <span id="article-read-time">7 phút đọc</span>
+          <span>·</span>
+          <span>Cập nhật mới nhất</span>
+        </div>
+        <h1 id="article-title-main" class="article-title-main">Tên điểm đến</h1>
+        <p id="article-subtitle-main" class="article-subtitle-main">Mô tả tóm tắt</p>
+      </div>
+    </div>
+
+    <!-- Khung nội dung chính & Mục lục (TOC) -->
+    <div class="article-main-container">
+      <!-- Mục lục dính bên trái trên Desktop -->
+      <aside class="article-toc-sidebar">
+        <div class="toc-title"><i class="fa-solid fa-list-ul" style="margin-right: 6px;"></i> Mục lục bài viết</div>
+        <nav id="article-toc-list" class="toc-list" aria-label="Mục lục bài viết"></nav>
+      </aside>
+
+      <!-- Nội dung chi tiết bài viết (700 - 1000 từ) -->
+      <main class="article-content-wrapper">
+        <!-- Hộp thông tin nhanh -->
+        <div class="quick-info-box" id="article-quick-info"></div>
+
+        <!-- Thân bài viết HTML hoàn chỉnh -->
+        <div id="article-content-container"></div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Nút mở mục lục trên Mobile -->
+  <button id="btn-mobile-toc" class="btn-mobile-toc" style="display: none;">
+    <i class="fa-solid fa-list-ol"></i> Mục lục
+  </button>
+
+  <!-- ========================================================================= -->
+  <!-- 14. MODAL CHI TIẾT LỊCH TRÌNH                                             -->
+  <!-- ========================================================================= -->
+  <div id="itinerary-modal" role="dialog" aria-modal="true" aria-label="Chi tiết lịch trình">
+    <div class="itinerary-modal-dialog" id="itinerary-modal-dialog">
+      <!-- Nội dung render động từ data.itineraries -->
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 15. LIGHTBOX XEM ẢNH NGHỆ THUẬT PHÓNG TO                                  -->
+  <!-- ========================================================================= -->
+  <div id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to">
+    <div class="lightbox-content-wrap">
+      <button id="lightbox-close" class="lightbox-close-btn" aria-label="Đóng xem ảnh">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button id="lightbox-prev" class="lightbox-btn-prev" aria-label="Ảnh trước">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Ảnh phóng to" />
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+      <button id="lightbox-next" class="lightbox-btn-next" aria-label="Ảnh sau">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 16. SCRIPTS LOGIC & DỮ LIỆU ĐIỂM ĐẾN                                      -->
+  <!-- ========================================================================= -->
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

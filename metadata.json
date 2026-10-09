@@ -1,0 +1,6 @@
+{
+  "name": "Du lịch Thanh Hóa - Nơi Biển Xanh Gặp Núi Rừng",
+  "description": "Cổng thông tin và cẩm nang quảng bá du lịch tỉnh Thanh Hóa: khám phá Pù Luông, Sầm Sơn, Di sản Thành Nhà Hồ, Bến En, Lam Kinh, ẩm thực và văn hóa xứ Thanh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
